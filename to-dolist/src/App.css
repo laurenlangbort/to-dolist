@@ -1,6 +1,8 @@
 @font-face {
-  font-family: Inter;
-  src: "/assets/Inter/Inter-VariableFont_slnt,wght.tff";
+  font-family: 'Inter';
+  src: url('./assets/Inter/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 .body {
@@ -67,4 +69,67 @@
   width: 500px; 
   height: 50px;  
   background-color: rgba(255, 48, 48, 0.39); 
+} 
+
+
+.popUp-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+.popUp-content {
+  background-color: white; 
+  width: 700px; 
+  height: 500px; 
+  text-align: left; 
+  font-family: "Inter"; 
+  padding-left: 40px;
+} 
+ 
+.formFill {
+  text-align: center; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+} 
+
+.submitButton {
+  width: 250px; 
+  height: 70px; 
+  border-radius: 60px; 
+  background-color: black; 
+  color: white; 
+  font-size: 30px;
+} 
+
+@media (max-width: 992px) {
+  .box { 
+    display: flex; 
+    flex-direction: column-reverse;  
+  }  
+
+  .urgentItem {
+    width: 300px; 
+    height: 50px;  
+    background-color: rgba(255, 48, 48, 0.39);  
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block;
+  } 
+  
+  .tasksHeader {
+    font-size: 25px; 
+    font-weight: 500; 
+    color: black; 
+    text-align: center; 
+    padding-left: 0px;
+  }
 }
